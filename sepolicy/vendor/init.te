@@ -6,3 +6,9 @@ allow init vendor_configs_file:dir mounton;
 
 # Allow init to access all sysfs
 allow init sysfs:file setattr;
+
+# Allow last_kmsg to access
+allow init proc_last_kmsg:file {
+  r_file_perms
+  setattr
+};

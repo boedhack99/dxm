@@ -2,3 +2,6 @@
 set_prop(vendor_init, vendor_persist_camera_prop)
 set_prop(vendor_init, vendor_camera_prop)
 set_prop(vendor_init, vendor_video_prop)
+
+# Block
+allow vendor_init block_device:lnk_file create_file_perms;
