@@ -1,16 +1,11 @@
-# Camera
-type persist_camera_prop, property_type;
-type vendor_camera_prop, property_type;
-type camera_prop, property_type;
+# Displayfeature
+type vendor_displayfeature_prop, property_type;
 
-# Init Device
+# Fingerprint
+type vendor_fp_prop, property_type;
+
+# Init
 type vendor_device_prop, property_type;
-
-# IR
-type lirc_prop, property_type;
-
-# Mlipay
-type ifaa_prop, property_type;
 
 # Power
 type power_prop, property_type;
