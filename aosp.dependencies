@@ -1,0 +1,16 @@
+[
+ {
+   "repository"  : "kernel_mojito",
+   "target_path" : "kernel/xiaomi/mojito",
+   "branch"      : "R"
+ },
+ {
+   "repository"  : "vendor_mojito",
+   "target_path" : "vendor/xiaomi/mojito",
+   "branch"      : "R"
+ },
+ {
+    "repository": "android_hardware_xiaomi",
+    "target_path": "hardware/xiaomi"
+ }
+]
