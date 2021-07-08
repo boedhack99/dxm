@@ -1,2 +1,1 @@
-get_prop(priv_app, vendor_default_prop)
 hal_client_domain(priv_app, hal_misys)
