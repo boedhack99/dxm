@@ -1,10 +1,5 @@
-r_dir_file(hal_perf_default, hal_audio_default);
-r_dir_file(hal_perf_default, hal_fingerprint_default);
-
-allow hal_perf_default {
-    sysfs_msm_subsys
-}:dir r_dir_perms;
-
-allow hal_perf_default {
-    sysfs_msm_subsys
-}:file rw_file_perms;
+r_dir_file(hal_perf_default, sysfs_thermal)
+allow hal_perf_default sysfs_thermal:file w_file_perms;
+allow hal_perf_default system_server:dir { read search open };
+allow hal_perf_default system_server:file { read getattr open };
+allow hal_perf_default hal_camera_default:dir { search };

@@ -1,14 +1,11 @@
-# Displayfeature
-type vendor_displayfeature_prop, property_type;
-
-# Fingerprint
-type vendor_fp_prop, property_type;
-
-# Init
-type vendor_device_prop, property_type;
+# Manufacturer
+type system_manufacturer_prop, property_type;
 
 # Power
 type power_prop, property_type;
 
+# Sensor
+type persist_sensors_prop, property_type;
+
 # Thermal
-type thermal_normal_prop, property_type;
+type vendor_thermal_prop, property_type;

@@ -1,9 +1,3 @@
-type fingerprint_device, dev_type;
-
-type lirc_device, dev_type;
-
-type sound_device, dev_type;
-
 # A/B block devices
 type rawdump_device, dev_type;
 type bootselect_device, dev_type;
@@ -15,4 +9,4 @@ type modem_block_device, dev_type;
 type uefi_block_device, dev_type;
 type persist_block_device, dev_type;
 type npu_device, dev_type;
-type devinfo_block_device, dev_type;
+type devinfo_block_device, dev_type
