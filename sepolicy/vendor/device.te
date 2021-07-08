@@ -8,5 +8,3 @@ type gpt_block_device, dev_type;
 type modem_block_device, dev_type;
 type uefi_block_device, dev_type;
 type persist_block_device, dev_type;
-type npu_device, dev_type;
-type devinfo_block_device, dev_type
