@@ -7,7 +7,6 @@ type xbl_block_device, dev_type;
 type gpt_block_device, dev_type;
 type modem_block_device, dev_type;
 type uefi_block_device, dev_type;
-type persist_block_device, dev_type;
 
 type lirc_device, dev_type;
 type touchfeature_device, dev_type;
