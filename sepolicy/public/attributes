@@ -5,3 +5,7 @@ attribute hal_mlipay_client;
 attribute hal_misys;
 attribute hal_misys_server;
 attribute hal_misys_client;
+
+attribute hal_touchfeature;
+attribute hal_touchfeature_server;
+attribute hal_touchfeature_client;
