@@ -3,3 +3,6 @@ type ifaa_prop, property_type;
 
 # Touchfeature
 type vendor_touchfeature_prop, property_type;
+
+# Power
+type vendor_power_prop, property_type;
