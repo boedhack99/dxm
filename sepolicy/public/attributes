@@ -1,3 +1,7 @@
-hal_attribute_aosp(mlipay)
+attribute hal_mlipay;
+attribute hal_mlipay_server;
+attribute hal_mlipay_client;
 
-hal_attribute_aosp(misys)
+attribute hal_misys;
+attribute hal_misys_server;
+attribute hal_misys_client;
