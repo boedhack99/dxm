@@ -1945,7 +1945,6 @@ vendor/lib/libqtigef.so
 vendor/lib/libqti-iopd-client.so
 vendor/lib/libqti-iopd.so
 vendor/lib/libqtikeymaster4.so
-vendor/lib/libqti-perfd-client.so
 vendor/lib/libqti-perfd.so
 vendor/lib/libqti-util.so
 vendor/lib/libqti-utils.so
@@ -2311,7 +2310,6 @@ vendor/lib64/libqtigef.so
 vendor/lib64/libqti-iopd-client.so
 vendor/lib64/libqti-iopd.so
 vendor/lib64/libqtikeymaster4.so
-vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqti-perfd.so
 vendor/lib64/libqti-util.so
 vendor/lib64/libqti-utils.so
