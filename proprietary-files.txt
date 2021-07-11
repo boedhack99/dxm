@@ -1703,7 +1703,7 @@ vendor/framework/com.fingerprints.extension.jar
 # Library Hals
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-vendor/lib/hw/android.hardware.keymaster@3.0-impl.qti.so
+vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/com.dsi.ant@1.0-impl.so
 vendor/lib/hw/displayfeature.default.so
