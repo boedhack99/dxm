@@ -14,23 +14,22 @@ u:object_r:vendor_xbl_block_device:s0
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                                       u:object_r:camera_persist_file:s0
 
-# Elliptic
-/dev/elliptic[0-9]                                                   u:object_r:ultrasound_device:s0
+# Data files
+/data/vendor/goodix(/.*)?       u:object_r:fingerprint_data_file:s0
+/data/vendor/fpc(/.*)?          u:object_r:fingerprint_data_file:s0
+/data/vendor/fpdump(/.*)?       u:object_r:fingerprint_data_file:s0
+/data/vendor/thermal(/.*)?      u:object_r:thermal_data_file:s0
+/data/vendor/mac_addr(/.*)?     u:object_r:wifi_vendor_data_file:s0
 
-# Files in rootfs
-/bt_firmware(/.*)?                  u:object_r:bt_firmware_file:s0
-/dsp(/.*)?                          u:object_r:adsprpcd_file:s0
-/firmware(/.*)?                     u:object_r:firmware_file:s0
-/persist(/.*)?                      u:object_r:persist_file:s0
+# Elliptic
+/dev/elliptic0                  u:object_r:sensors_device:s0
+/dev/elliptic1                  u:object_r:sensors_device:s0
 
 # Fingerprint
-/data/vendor/fpc(/.*)?                                               u:object_r:fingerprint_data_file:s0
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
-/data/vendor/goodix(/.*)?                                            u:object_r:fingerprint_data_file:s0
 
 # HALs
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sm6150 u:object_r:hal_fingerprint_default_exec:s0
-/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_sm6150-ext u:object_r:hal_fingerprint_default_exec:s0
+/vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.2-service\.xiaomi_sm6150 u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.xiaomi_sm6150        u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power-service\.mojito-libperfmgr                                    u:object_r:hal_power_default_exec:s0
 /vendor/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mojito                                   u:object_r:hal_power_stats_default_exec:s0
@@ -38,6 +37,9 @@ u:object_r:vendor_xbl_block_device:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@1\.0-service                                             u:object_r:hal_misys_default_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@2\.0-service                                             u:object_r:hal_misys_default_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.misys@3\.0-service                                             u:object_r:hal_misys_default_exec:s0
+
+# IR
+/dev/spidev[0-9]\.1        u:object_r:lirc_device:s0
 
 # LED
 /sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?   u:object_r:sysfs_leds:s0
@@ -85,9 +87,14 @@ u:object_r:vendor_xbl_block_device:s0
 # Uefi
 /dev/block/platform/soc/1d84000.ufshc/by-name/uefisecapp_[ab]   u:object_r:vendor_uefi_block_device:s0
 
+# USB
+/vendor/bin/init\.mi\.usb\.sh    u:object_r:vendor_qti_init_shell_exec:s0
+
+#VndBinder
+/dev/binderfs/vndbinder                                         u:object_r:vndbinder_device:s0
+
 # WiFi
 /vendor/bin/nv_mac                                                                                     u:object_r:vendor_wcnss_service_exec:s0
 
 # Xiaomi thermal daemon
 /vendor/bin/mi_thermald                                                                                u:object_r:mi_thermald_exec:s0
-/data/vendor/thermal(/.*)?                                                                             u:object_r:thermal_data_file:s0
