@@ -43,7 +43,6 @@ u:object_r:vendor_xbl_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/cmnlib64_[ab]     u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/devcfg_[ab]       u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/dsp_[ab]          u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/dtbo_[ab]         u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/hyp_[ab]          u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/keymaster_[ab]    u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/mdtp_[ab]         u:object_r:vendor_mdtp_device:s0
@@ -52,8 +51,6 @@ u:object_r:vendor_xbl_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/persist           u:object_r:vendor_persist_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/qupfw_[ab]        u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/tz_[ab]           u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/vbmeta_[ab]       u:object_r:vendor_custom_ab_block_device:s0
-/dev/block/platform/soc/1d84000.ufshc/by-name/vendor_[ab]       u:object_r:system_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/xbl_[ab]          u:object_r:vendor_xbl_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/xbl_config_[ab]   u:object_r:vendor_custom_ab_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/imagefv_[ab]      u:object_r:vendor_custom_ab_block_device:s0
