@@ -1,5 +1,4 @@
 # A/B block devices
-type vendor_xbl_block_device, dev_type;
 type vendor_gpt_block_device, dev_type;
 type vendor_uefi_block_device, dev_type;
 
