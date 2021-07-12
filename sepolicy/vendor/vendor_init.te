@@ -4,3 +4,4 @@ set_prop(vendor_init, vendor_cnd_prop)
 set_prop(vendor_init, vendor_power_prop)
 
 allow init proc_last_kmsg:file { r_file_perms setattr };
+allow vendor_init block_device:lnk_file setattr;
