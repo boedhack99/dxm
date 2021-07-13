@@ -1,8 +1,0 @@
-# partition names in the block_device directory /dev/block/.../by-name
-allow hal_bootctl_default block_device:dir r_dir_perms;
-
-# Write to the XBL devices.
-allow hal_bootctl_default vendor_xbl_block_device:blk_file rw_file_perms;
-
-allow hal_bootctl_default vendor_uefi_block_device : blk_file {getattr};
-allow hal_bootctl_default block_device : blk_file {getattr};
