@@ -122,8 +122,9 @@ TARGET_USES_ION := true
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += \
-    mojito
+    mojito \
     sunny
+
 ODM_MANIFEST_MOJITO_FILES := $(DEVICE_PATH)/odm/manifest_mojito.xml
 ODM_MANIFEST_SUNNY_FILES := $(DEVICE_PATH)/odm/manifest_sunny.xml
 
