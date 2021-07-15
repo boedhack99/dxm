@@ -121,6 +121,11 @@ TARGET_USES_ION := true
 # HIDL
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE   := $(DEVICE_PATH)/compatibility_matrix.xml
+ODM_MANIFEST_SKUS += \
+    mojito
+    sunny
+ODM_MANIFEST_MOJITO_FILES := $(DEVICE_PATH)/odm/manifest_mojito.xml
+ODM_MANIFEST_SUNNY_FILES := $(DEVICE_PATH)/odm/manifest_sunny.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_mojito
